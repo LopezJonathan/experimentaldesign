@@ -55,15 +55,8 @@ body {
 .parallax-image.skrollable-between {
 	display: block;
 }
-.gap {
-	background: transparent center no-repeat;
-	background-size: cover;
-	height: 80vh;
-}
-.skrollr .gap {
-	background: transparent;
-}
-											/********** Body Text Example **********/
+
+											/********** Body Text **********/
 .body-text {
 	padding: 200px 0;
 	background-color: #fff;
@@ -84,6 +77,16 @@ body {
 	padding: 20px;
 	color: #45636B;
 }
+
+.gap {
+	background: transparent center no-repeat;
+	background-size: cover;
+	height: 80vh;
+}
+.skrollr .gap {
+	background: transparent !important;
+}
+
 											/********** Featured Items **********/
 .featured {
 	padding: 150px 0;
