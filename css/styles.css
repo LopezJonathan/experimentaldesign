@@ -1,0 +1,131 @@
+@charset "utf-8"; /* CSS Document */
+/*  Page styles  */
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	font: normal 14px/1.4 Arial, Helvetica, sans-serif;
+}
+
+											/********** Header intro **********/
+#skrollr-body {
+	height: 100%;
+	overflow: visible;
+	position: relative;
+}
+#page-intro h1 {
+	text-align: center;
+	color: floralwhite;
+	font: normal 60px 'Droid Serif', sans-serif;
+	padding-top: 24vh;
+}
+
+#page-intro h2 {
+	text-align: center;
+	color: floralwhite;
+	font: normal 25px 'Droid Serif', sans-serif;
+	padding-top: 2vh;
+}
+.parallax-image .skrollable-between {
+	display: block;
+}
+.parallax-image-wrapper {
+	position: fixed;
+	left: 0;
+	width: 100%;
+	overflow: hidden;
+	height: 80vh;
+	top: -80vh;
+}
+.parallax-image {
+	display: none;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	height: 100vh;
+	top: 0;
+}
+.parallax-image.skrollable-between {
+	display: block;
+}
+.gap {
+	background: transparent center no-repeat;
+	background-size: cover;
+	height: 80vh;
+}
+.skrollr .gap {
+	background: transparent;
+}
+											/********** Body Text Example **********/
+.body-text {
+	padding: 200px 0;
+	background-color: #fff;
+	color: #25373C;
+	font-size: 18px;
+	min-height: 100vh;
+	text-align: center;
+}
+.body-text h2 {
+	font-size: 42px;
+	font-weight: normal;
+	margin-bottom: 80px;
+}
+.body-text p {
+	width: 28%;
+	display: inline-block;
+	text-align: left;
+	padding: 20px;
+	color: #45636B;
+}
+											/********** Featured Items **********/
+.featured {
+	padding: 150px 0;
+	background-color: #fff;
+	color: #25373C;
+	font-size: 18px;
+	min-height: 100vh;
+	text-align: center;
+}
+.featured h2 {
+	font-size: 42px;
+	margin-bottom: 80px;
+	font-weight: normal;
+}
+.featured div {
+	display: inline-block;
+	width: 30%;
+	margin: 5px;
+	border: 1px solid #ccc;
+	padding: 45px;
+	box-shadow: 1px 1px 1px #ccc, 0 0 30px #eee inset;
+}
+.featured div h4 {
+	font-size: 18px;
+	text-transform: uppercase;
+	color: #425F67;
+	font-weight: normal;
+}
+
+@media (max-width: 800px) {
+	#page-intro h1 {
+		font-size: 42px;
+		padding-top: 15vh;
+	}
+}
+
+@media (max-width: 900px) {
+	.featured div {
+		width: 90%;
+		margin-bottom: 30px;
+	}
+	.body-text p {
+		width: 100%;
+	}
+}
